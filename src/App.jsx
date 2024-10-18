@@ -1,3 +1,4 @@
+import NavBar from "./components/Navbar"
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       </div>
 
       {/* Content start from here */}
+        <NavBar/>
     </div>
   )
 }
