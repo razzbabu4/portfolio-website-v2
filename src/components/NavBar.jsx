@@ -31,7 +31,7 @@ const NavBar = () => {
         },
     ]
     return (
-        <nav className='fixed flex justify-between items-center w-full px-4 py-6 text-white bg-stone-950/30 backdrop-blur-md lg:px-16'>
+        <nav className='fixed flex justify-between items-center w-full px-4 py-5 text-white bg-stone-950/30 backdrop-blur-md lg:px-16'>
             <div className='flex gap-2 items-center'>
                 <h1 className='text-xl font-medium ml-2 flex items-center gap-2 uppercase'>Md. Tareq Masud</h1>
             </div>
@@ -54,7 +54,7 @@ const NavBar = () => {
 
             {
                 navOption && (
-                    <ul className='md:hidden flex flex-col justify-center items-center absolute top-0 left-0 w-full min-h-screen bg-stone-950/30 backdrop-blur-xl'>
+                    <ul className='md:hidden flex flex-col justify-center items-center absolute top-0 left-0 w-full min-h-screen bg-stone-950/90 backdrop-blur-xl '>
                         {
                             navLinks.map(({ id, link }) =>
                                 <li key={id} className='px-4 py-4 cursor-pointer capitalize text-2xl font-medium text-white transition hover:scale-105 duration-300 hover:text-stone-400'>
