@@ -1,5 +1,6 @@
 import Hero from "./components/Hero"
 import NavBar from "./components/Navbar"
+import Skills from "./components/Skills"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       {/* Content start from here */}
       <NavBar />
       <Hero />
+      <Skills/>
     </div>
   )
 }

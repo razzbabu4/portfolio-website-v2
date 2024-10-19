@@ -16,7 +16,7 @@ const Hero = () => {
                         <button className=' text-stone-900 px-4 py-3 w-fit my-2 rounded-full flex items-center gap-2 bg-gradient-to-r from-stone-300 to-stone-500 font-semibold tracking-tight'>
                             <a
                                 href='Md_Tareq_Masud_Front_End_Developer_Resume.pdf'
-                                download={true}>
+                                download>
                                 Download Resume
                             </a>
                         </button>
