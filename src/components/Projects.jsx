@@ -41,11 +41,11 @@ const Projects = () => {
     return (
         <div
             name="projects"
-            className="w-full md:h-screen pt-20"
+            className="w-full md:min-h-screen pt-20"
         >
             <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full min-h-screen text-white">
                 <div className="pb-6">
-                    <p className="text-4xl font-bold inline border-b-4 border-stone-400">
+                    <p className="text-4xl font-bold inline border-b-4 py-2 border-stone-400">
                         Projects
                     </p>
                     <p className="py-4">Check out some of my work right here</p>
@@ -53,7 +53,7 @@ const Projects = () => {
                 {/* Projects */}
                 <div>
                     {
-                        projects.map(({ id, image, title, description, technology, live, code }) => <div key={id} className='mb-14 flex flex-wrap gap-4'>
+                        projects.map(({ id, image, title, description, technology, live, code }) => <div key={id} className='mb-10 flex flex-wrap gap-4'>
                             <div className='w-full lg:w-1/3'>
                                 <img src={image}
                                     className='mb-2 rounded-xl'
