@@ -10,7 +10,7 @@ const Education = () => {
                 <motion.div
                     whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: -100 }}
-                    transition={{ duration: 1.5 }}
+                    transition={{ duration: 1 }}
                     className='mb-12'>
                     <p className="text-4xl font-bold border-b-4 border-gray-500 py-2 inline">
                         Education
@@ -27,7 +27,9 @@ const Education = () => {
                     <p>Bachelor of Science in CSE</p>
                     <p>(2016-2020)</p>
                 </motion.div>
+
                 <motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -30 }} transition={{ duration: 1 }} className='h-12 w-0.5 bg-slate-400 my-1 mx-auto'></motion.div>
+                
                 <motion.div 
                 whileInView={{opacity:1, x:0}}
                 initial={{opacity:0, x:100}}

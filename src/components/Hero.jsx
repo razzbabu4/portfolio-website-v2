@@ -68,7 +68,7 @@ const Hero = () => {
                         className='rounded-2xl lg:w-3/4'
                         initial={{ opacity: 0, x: 100 }}
                         animate={{ x: 0, opacity: 1 }}
-                        transition={{duration: 1, delay: 1.5}}
+                        transition={{duration: 1, delay: 1}}
                     />
                 </div>
             </div>

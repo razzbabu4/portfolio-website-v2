@@ -2,7 +2,7 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
-import github from "../assets/github.png";
+import node from "../assets/node.png";
 import tailwind from "../assets/tailwind.png";
 import { motion } from "framer-motion";
 
@@ -48,21 +48,21 @@ const Skills = () => {
       src: reactImage,
       title: "React",
       style: "shadow-blue-600",
-      variants: iconVariants(2.5)
+      variants: iconVariants(2)
     },
     {
       id: 5,
       src: tailwind,
       title: "Tailwind",
       style: "shadow-sky-400",
-      variants: iconVariants(6)
+      variants: iconVariants(3)
     },
     {
       id: 6,
-      src: github,
-      title: "GitHub",
-      style: "shadow-gray-400",
-      variants: iconVariants(4)
+      src: node,
+      title: "Node",
+      style: "shadow-green-400",
+      variants: iconVariants(5)
     },
   ];
   return (
@@ -74,7 +74,7 @@ const Skills = () => {
         <motion.div
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -100 }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 1 }}
         >
           <p className="text-4xl font-bold border-b-4 border-stone-400 py-2 inline">
             Skills
