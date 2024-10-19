@@ -77,21 +77,28 @@ const Projects = () => {
                                     initial={{ opacity: 0, x: 100 }}
                                     transition={{duration:1.5}}
                                     className='max-w-xl w-full lg:w-3/4'>
-                                    <h3 className='text-2xl font-semibold mb-1'>{title}</h3>
-                                    <p className='text-stone-400 mb-2'>{description}</p>
-                                    <div className='overflow-x-scroll md:overflow-hidden mb-4 py-2'>
-                                        {
-                                            technology.map((tech) => <span key={id} className='mr-2 rounded bg-stone-900 p-2 text-sm font-medium text-stone-300'>{tech}</span>)
-                                        }
-                                    </div>
-                                    <div className='flex gap-4 text-xl'>
+                                    <h3 className='text-2xl font-semibold mb-4 flex justify-between items-center pr-4'>{title} <div className='flex gap-4 text-xl'>
                                         <a href={live} target='_blank'>
                                             <CgWebsite />
                                         </a>
                                         <a href={code} target='_blank'>
                                             <FaGithub />
                                         </a>
+                                    </div></h3>
+                                    <p className='text-stone-400 mb-2'>{description}</p>
+                                    <div className='overflow-x-scroll md:overflow-hidden mb-4 py-2'>
+                                        {
+                                            technology.map((tech) => <span key={id} className='mr-2 rounded bg-stone-900 p-2 text-sm font-medium text-stone-300'>{tech}</span>)
+                                        }
                                     </div>
+                                    {/* <div className='flex gap-4 text-xl'>
+                                        <a href={live} target='_blank'>
+                                            <CgWebsite />
+                                        </a>
+                                        <a href={code} target='_blank'>
+                                            <FaGithub />
+                                        </a>
+                                    </div> */}
                                 </motion.div>
                             </div>
                         )
