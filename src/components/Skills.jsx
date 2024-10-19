@@ -4,73 +4,105 @@ import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
+import { motion } from "framer-motion";
+
+const iconVariants = (duration) => ({
+  initial: { y: -10 },
+  animate: {
+    y: [10, -10],
+    transition: {
+      duration: duration,
+      ease: "linear",
+      repeat: Infinity,
+      repeatType: "reverse"
+
+    }
+  }
+})
 
 const Skills = () => {
-    const technologies = [
-        {
-          id: 1,
-          src: html,
-          title: "HTML",
-          style: "shadow-orange-500",
-        },
-        {
-          id: 2,
-          src: css,
-          title: "CSS",
-          style: "shadow-blue-500",
-        },
-        {
-          id: 3,
-          src: javascript,
-          title: "JavaScript",
-          style: "shadow-yellow-500",
-        },
-        {
-          id: 4,
-          src: reactImage,
-          title: "React",
-          style: "shadow-blue-600",
-        },
-        {
-          id: 5,
-          src: tailwind,
-          title: "Tailwind",
-          style: "shadow-sky-400",
-        },
-        {
-          id: 6,
-          src: github,
-          title: "GitHub",
-          style: "shadow-gray-400",
-        },
-      ];
-    return (
-        <div
-            name="skills"
-            className="w-full md:h-screen pt-20 lg:pt-0"
+  const technologies = [
+    {
+      id: 1,
+      src: html,
+      title: "HTML",
+      style: "shadow-orange-500",
+      variants: iconVariants(2)
+    },
+    {
+      id: 2,
+      src: css,
+      title: "CSS",
+      style: "shadow-blue-500",
+      variants: iconVariants(3)
+    },
+    {
+      id: 3,
+      src: javascript,
+      title: "JavaScript",
+      style: "shadow-yellow-500",
+      variants: iconVariants(5)
+    },
+    {
+      id: 4,
+      src: reactImage,
+      title: "React",
+      style: "shadow-blue-600",
+      variants: iconVariants(2.5)
+    },
+    {
+      id: 5,
+      src: tailwind,
+      title: "Tailwind",
+      style: "shadow-sky-400",
+      variants: iconVariants(6)
+    },
+    {
+      id: 6,
+      src: github,
+      title: "GitHub",
+      style: "shadow-gray-400",
+      variants: iconVariants(4)
+    },
+  ];
+  return (
+    <div
+      name="skills"
+      className="w-full md:h-screen pt-20 lg:pt-0"
+    >
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full min-h-screen text-white">
+        <motion.div
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -100 }}
+          transition={{ duration: 1.5 }}
         >
-            <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full min-h-screen text-white">
-                <div>
-                    <p className="text-4xl font-bold border-b-4 border-stone-400 py-2 inline">
-                        Skills
-                    </p>
-                    <p className="py-4">{`These are the technologies I've worked with`}</p>
-                </div>
+          <p className="text-4xl font-bold border-b-4 border-stone-400 py-2 inline">
+            Skills
+          </p>
+          <p className="py-4">{`These are the technologies I've worked with`}</p>
+        </motion.div>
 
-                <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center p-8 sm:px-0">
-                    {technologies.map(({ id, src, title, style }) => (
-                        <div
-                            key={id}
-                            className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
-                        >
-                            <img src={src} alt="" className="w-20 mx-auto" />
-                            <p className="mt-4">{title}</p>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </div>
-    );
+        <motion.div
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: -100 }}
+          transition={{ duration: 1.5 }}
+          className="w-full grid grid-cols-2 sm:grid-cols-3 gap-12 text-center p-8 sm:px-10">
+          {technologies.map(({ id, src, title, style, variants }) => (
+            <motion.div
+            initial="initial"
+            animate="animate"
+            variants={variants}
+              key={id}
+              className={`shadow-md py-2 rounded-lg ${style}`}
+            >
+              <img src={src} alt="" className="w-20 mx-auto" />
+              <p className="mt-4">{title}</p>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+    </div>
+  );
 };
 
 export default Skills;
