@@ -1,5 +1,6 @@
 import Contact from "./components/Contact"
 import Education from "./components/Education"
+import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import NavBar from "./components/Navbar"
 import Projects from "./components/Projects"
@@ -23,6 +24,7 @@ function App() {
       <Projects/>
       <Education/>
       <Contact/>
+      <Footer/>
     </div>
   )
 }
