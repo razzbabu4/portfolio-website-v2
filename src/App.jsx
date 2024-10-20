@@ -18,7 +18,7 @@ function App() {
       </div>
 
       {/* Content start from here */}
-      <Navbar />
+      <Navbar/>
       <Hero />
       <Skills/>
       <Projects/>

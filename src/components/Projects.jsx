@@ -60,7 +60,7 @@ const Projects = () => {
                 <div>
                     {
                         projects.map(({ id, image, title, description, technology, live, code }) =>
-                            <div key={id} className='mb-10 flex flex-wrap gap-4'>
+                            <div key={id} className='mb-10 flex flex-wrap gap-6'>
                                 {/* Image */}
                                 <motion.div
                                     whileInView={{ opacity: 1, x: 0 }}
