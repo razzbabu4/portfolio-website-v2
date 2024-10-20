@@ -19,8 +19,8 @@ function App() {
 
       {/* Content start from here */}
       <Navbar/>
-      <Hero />
-      <Skills/>
+      <Hero/>
+      <Skills />
       <Projects/>
       <Education/>
       <Contact/>
