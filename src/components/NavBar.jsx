@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 
+
 const Navbar = () => {
     const [navOption, setNavOption] = useState(false);
     const navLinks = [
