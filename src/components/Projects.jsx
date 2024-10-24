@@ -88,17 +88,9 @@ const Projects = () => {
                                     <p className='text-stone-400 mb-2'>{description}</p>
                                     <div className='overflow-x-scroll md:overflow-hidden mb-4 py-2'>
                                         {
-                                            technology.map((tech) => <span key={id} className='mr-2 rounded bg-stone-900 p-2 text-sm font-medium text-stone-300'>{tech}</span>)
+                                            technology.map((tech, index) => <span key={index} className='mr-2 rounded bg-stone-900 p-2 text-sm font-medium text-stone-300'>{tech}</span>)
                                         }
                                     </div>
-                                    {/* <div className='flex gap-4 text-xl'>
-                                        <a href={live} target='_blank'>
-                                            <CgWebsite />
-                                        </a>
-                                        <a href={code} target='_blank'>
-                                            <FaGithub />
-                                        </a>
-                                    </div> */}
                                 </motion.div>
                             </div>
                         )
