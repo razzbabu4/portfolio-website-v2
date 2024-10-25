@@ -27,22 +27,24 @@ const childVariants = {
 
 const Hero = () => {
     return (
-        <div name='home' className='min-h-screen md:h-screen w-full pt-16 lg:pt-10'>
-            <div className='max-w-screen-lg m-auto flex flex-col-reverse gap-6 md:flex-row items-center justify-between px-4 h-full py-6'>
-                <motion.div 
-                initial="hidden"
-                animate="visible"
-                variants={ContainerVariants}
-                className='flex flex-col justify-center items-center md:items-start h-full w-full md:w-1/2'>
+        <div
+            id='home'
+            className='w-full pt-16 lg:pt-10'>
+            <div className='max-w-screen-lg min-h-screen m-auto flex flex-col-reverse gap-6 md:flex-row items-center justify-between px-4 py-6'>
+                <motion.div
+                    initial="hidden"
+                    animate="visible"
+                    variants={ContainerVariants}
+                    className='flex flex-col justify-center items-center md:items-start h-full w-full md:w-1/2'>
                     <motion.h2
-                    variants={childVariants} 
-                    className='text-4xl lg:text-6xl font-bold tracking-tighter pb-2'>Md. Tareq Masud</motion.h2>
+                        variants={childVariants}
+                        className='text-4xl lg:text-6xl font-bold tracking-tighter pb-2'>Md. Tareq Masud</motion.h2>
                     <motion.span
-                    variants={childVariants}
-                    className="text-3xl bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-transparent tracking-tight">Junior Web Developer</motion.span>
+                        variants={childVariants}
+                        className="text-3xl bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-transparent tracking-tight">Junior Web Developer</motion.span>
                     <motion.p
-                    variants={childVariants}
-                    className='text-stone-400 py-6 tracking-tighter leading-relaxed text-lg'>
+                        variants={childVariants}
+                        className='text-stone-400 py-6 tracking-tighter leading-relaxed text-lg'>
                         Hello! I am a passionate Junior Web Developer skilled in crafting responsive and dynamic web applications. With expertise in HTML, CSS, and Tailwind CSS, I create visually appealing interfaces that enhance user experience. I am proficient in JavaScript and React, enabling me to build interactive components that engage users effectively. My backend knowledge includes Express and MongoDB, allowing me to develop robust server-side applications.
                     </motion.p>
                     <motion.div variants={childVariants} className="flex gap-4">
@@ -68,7 +70,7 @@ const Hero = () => {
                         className='rounded-2xl lg:w-3/4'
                         initial={{ opacity: 0, x: 100 }}
                         animate={{ x: 0, opacity: 1 }}
-                        transition={{duration: 1, delay: 1}}
+                        transition={{ duration: 1, delay: 1 }}
                     />
                 </div>
             </div>

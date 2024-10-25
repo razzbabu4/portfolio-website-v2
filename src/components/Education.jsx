@@ -3,16 +3,16 @@ import { motion } from "framer-motion";
 const Education = () => {
     return (
         <div
-            name="education"
-            className="w-full md:h-screen p-4 text-white pt-20"
+            id="education"
+            className="w-full p-4 pt-16 lg:pt-5"
         >
-            <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+            <div className="max-w-screen-lg min-h-screen m-auto p-4 flex flex-col justify-center w-full h-full text-white">
                 <motion.div
                     whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: -100 }}
                     transition={{ duration: 1 }}
                     className='mb-12'>
-                    <p className="text-4xl font-bold border-b-4 border-gray-500 py-2 inline">
+                    <p className="text-3xl md:text-4xl font-bold border-b-4 border-gray-500 py-2 inline">
                         Education
                     </p>
                     <p className="py-4">Checkout of my educational background right here</p>

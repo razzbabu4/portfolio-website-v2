@@ -67,16 +67,16 @@ const Skills = () => {
   ];
   return (
     <div
-      name="skills"
-      className="w-full md:h-screen pt-20 lg:pt-0"
+      id="skills"
+      className="w-full pt-20 lg:pt-0"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full min-h-screen text-white">
+      <div className="max-w-screen-lg min-h-screen m-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <motion.div
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -100 }}
           transition={{ duration: 1 }}
         >
-          <p className="text-4xl font-bold border-b-4 border-stone-400 py-2 inline">
+          <p className="text-3xl md:text-4xl font-bold border-b-4 border-stone-400 py-2 inline">
             Skills
           </p>
           <p className="py-4">{`These are the technologies I've worked with`}</p>

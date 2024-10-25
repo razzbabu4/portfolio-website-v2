@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 const Contact = () => {
   return (
     <div
-      name="contact"
-      className="w-full md:h-screen text-white pt-20 lg:pt-0"
+      id="contact"
+      className="w-full text-white pt-20 lg:pt-5"
     >
-      <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto min-h-screen">
+      <div className="flex flex-col p-4 justify-center max-w-screen-lg min-h-screen m-auto w-full h-full">
         <motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -100 }} transition={{ duration: 1 }} className="pb-4">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+          <p className="text-3xl md:text-4xl font-bold inline border-b-4 border-gray-500">
             Contact
           </p>
           <p className="py-4">Submit the form below to get in touch with me</p>
